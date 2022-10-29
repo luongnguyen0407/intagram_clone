@@ -15,6 +15,10 @@ const UserSchema = new mongoose.Schema(
       max: 50,
       unique: true,
     },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
     password: {
       type: String,
       required: true,
@@ -43,6 +47,9 @@ const UserSchema = new mongoose.Schema(
     from: {
       type: String,
       max: 50,
+    },
+    refreshToken: {
+      type: String,
     },
     relationship: {
       type: Number,

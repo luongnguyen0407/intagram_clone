@@ -6,7 +6,11 @@ const verifyToken = (req, res, next) => {
   if (!token) return res.status(401).json({ message: "access token invalid" });
   try {
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
-    req.user = decoded;
+    if (req.body.userId !== decoded.userId)
+      return res.status(403).jsonp({
+        success: false,
+        message: "access token invalid ",
+      });
     next();
   } catch (error) {
     console.log(error);
