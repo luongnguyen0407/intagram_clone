@@ -21,7 +21,7 @@ const SideBar: React.FC = () => {
           name="Menu"
         />
         {ListSideBar.map((item) => (
-          <OneItem src={item.img} name={item.name} key={item.name} />
+          <OneItem src={item.img} name={item.name} key={item.id} />
         ))}
       </div>
       <div>
@@ -32,7 +32,7 @@ const SideBar: React.FC = () => {
           name="Menu"
         />
         {ListSideBar.map((item) => (
-          <OneItem src={item.img} name={item.name} key={item.name} />
+          <OneItem src={item.img} name={item.name} key={item.id} />
         ))}
       </div>
       <div>
@@ -43,7 +43,7 @@ const SideBar: React.FC = () => {
           name="Menu"
         />
         {ListSideBar.map((item) => (
-          <OneItem src={item.img} name={item.name} key={item.name} />
+          <OneItem src={item.img} name={item.name} key={item.id} />
         ))}
       </div>
     </aside>

@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto;
+    @apply text-base font-normal mx-auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     max-width: 1440px;
