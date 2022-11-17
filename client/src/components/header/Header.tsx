@@ -5,8 +5,10 @@ const Header = () => {
   return (
     <div className="bg-white p-3 sticky top-0">
       <div className="container flex justify-between items-center">
-        <Logo />
-        <div className="p-2 pl-3 bg-slate-200 flex-1 max-w-lg rounded-full flex gap-x-2 items-center">
+        <div className="w-1/5">
+          <Logo />
+        </div>
+        <div className="p-2 pl-3 bg-slate-200 w-3/5 max-w-lg rounded-full flex gap-x-2 items-center">
           <BsSearch />
           <input
             type="text"
@@ -14,7 +16,7 @@ const Header = () => {
             placeholder="Tìm kiếm trên facebook"
           />
         </div>
-        <div className="flex gap-x-2 items-center ">
+        <div className="flex gap-x-2 items-center w-1/5 justify-end">
           <div className="p-3 bg-slate-200 cursor-pointer rounded-full">
             <FaFacebookMessenger />
           </div>
