@@ -42,7 +42,20 @@ const CreatePost: React.FC = () => {
 };
 
 const NewPost = () => {
-  return <div>hello</div>;
+  return (
+    <div className="bg-white w-[500px] drop-shadow-2xl rounded-lg">
+      <div className="p-4 border-b border-secondary">
+        <h3 className=" text-center font-bold text-xl">Tạo bài viết</h3>
+      </div>
+      <div>
+        <textarea
+          placeholder="What do you mind"
+          name="text_post"
+          className="border-none w-full resize-none outline-none p-3"
+        ></textarea>
+      </div>
+    </div>
+  );
 };
 
 export default CreatePost;
