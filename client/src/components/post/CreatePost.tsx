@@ -15,7 +15,7 @@ const CreatePost: React.FC = () => {
     <div className="py-3 px-4 bg-white rounded-lg">
       <div className="flex items-center gap-x-2 border-b border-secondary pb-3">
         <img
-          src="https://source.unsplash.com/random"
+          src="https://images.unsplash.com/photo-1669490893279-4589b3b1cf4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
           className="rounded-full w-10 h-10 object-cover"
           alt=""
         />
@@ -51,7 +51,7 @@ const NewPost = () => {
         <textarea
           placeholder="What do you mind"
           name="text_post"
-          className="border-none w-full resize-none outline-none p-3"
+          className="border-none w-full resize-none outline-none p-3 h-[200px]"
         ></textarea>
       </div>
     </div>
